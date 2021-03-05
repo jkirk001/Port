@@ -1,0 +1,33 @@
+.NavInitial {
+  background-color: black;
+  min-height: 100%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.NavInitialAnimate {
+  background-color: black;
+  min-height: 100%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  animation: shrink 2s ease-in 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shrink {
+  0% {
+    min-height: 10%;
+    height: 10%;
+    width: 100%;
+    transform: translatey(0);
+  }
+  100% {
+    transform: translatey(-45%);
+  }
+}

@@ -1,0 +1,7 @@
+.Blog {
+  width: 90%;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  margin: 0 auto;
+}

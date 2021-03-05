@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import Landing from "./container/Landing/Landing";
+import Blog from "./components/Blog/Blog";
+import "./App.css";
+import { NavContext } from "./context/nav-context";
 
 function App() {
+  const navContext = useContext(NavContext);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Landing />
     </div>
   );
 }
