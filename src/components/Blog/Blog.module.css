@@ -1,7 +1,44 @@
 .Blog {
-  width: 90%;
-  height: 600px;
+  width: 100%;
+  height: 90%;
   background-color: white;
   display: flex;
-  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 2px;
+
+  position: fixed;
+  opacity: 0;
+}
+
+.BlogEntering {
+  width: 100%;
+  height: 90%;
+  background-color: white;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 2px;
+
+  position: fixed;
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+.BlogEntered {
+  width: 100%;
+  height: 90%;
+  background-color: white;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 2px;
+  bottom: 0;
+  position: fixed;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
